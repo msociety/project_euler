@@ -8,12 +8,12 @@
 				<div class="accordion-inner">
 					<span class="btnRun"><button class="btn btn-mini btn-inverse" data-index="<%= index %>"><i class="icon-play icon-white"></i> Run</button></span>
 					<p><%= obj.description %></p>
-					<pre class="line-numbers" data-linenumber="0"><code class="language-javascript"><%= euler[obj.functionName] %></code></pre>
+					<pre class="line-numbers" data-linenumber="0"><code class="language-javascript"><%= euler[obj.fileName][obj.functionName] %></code></pre>
 					<% if(!_.isNull(obj.dependences)) { %>
 						<p><strong>Dependencias:</strong></p>
 						<% _.each(obj.dependences, function (dep) { %>
 							<p>function <%= dep %>()</p>
-							<pre class="line-numbers" data-linenumber="0"><code class="language-javascript"><%= euler[dep] %></code></pre>
+							<pre class="line-numbers" data-linenumber="0"><code class="language-javascript"><%= euler[obj.fileName][dep] %></code></pre>
 						<% }); %>
 					<% } %>
 				</div>
