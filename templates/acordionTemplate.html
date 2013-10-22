@@ -1,0 +1,23 @@
+<% _.each(euler.info, function (obj, index) {
+	if (obj.solved) { %>
+		<div class="accordion-group">
+			<div class="accordion-heading row-fluid">
+				<span class="span12"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= index %>"><%= obj.title %></a></span>
+			</div>
+			<div id="collapse<%= index %>" class="accordion-body collapse">
+				<div class="accordion-inner">
+					<span class="btnRun"><button class="btn btn-mini btn-inverse" data-index="<%= index %>"><i class="icon-play icon-white"></i> Run</button></span>
+					<p><%= obj.description %></p>
+					<pre class="line-numbers" data-linenumber="0"><code class="language-javascript"><%= euler[obj.functionName] %></code></pre>
+					<% if(!_.isNull(obj.dependences)) { %>
+						<p><strong>Dependencias:</strong></p>
+						<% _.each(obj.dependences, function (dep) { %>
+							<p>function <%= dep %>()</p>
+							<pre class="line-numbers" data-linenumber="0"><code class="language-javascript"><%= euler[dep] %></code></pre>
+						<% }); %>
+					<% } %>
+				</div>
+			</div>
+		</div>
+	<% }
+}); %>
