@@ -125,5 +125,5 @@ define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstr
 			}
 			return primes;
 		}
-	}
+	};
 });

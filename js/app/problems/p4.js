@@ -35,5 +35,5 @@ define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstr
 			}
 			return sol.i + " * " + sol.j + " = " + sol.mul;
 		}
-	}
+	};
 });
