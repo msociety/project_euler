@@ -1,4 +1,5 @@
-define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstrap, euler) {
+define(['problems'], function(euler) {
+
 	euler.p7 = {
 
 		getFirstNPrimes: function getFirstNPrimes(n) {
@@ -29,4 +30,5 @@ define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstr
 			return primes[primes.length - 1];
 		}
 	};
+
 });

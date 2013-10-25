@@ -1,6 +1,7 @@
-define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstrap, euler) {
+define(['problems'], function(euler) {
 
 	euler.p6 = {
+
 		sumSquareDifference: function sumSquareDifference(n) {
 			var num = n || 100;
 			var sumOfSquares = 0;

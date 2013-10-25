@@ -1,4 +1,5 @@
-define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstrap, euler) {
+define(['problems'], function(euler) {
+
 	euler.p5 = {
 
 		/*
@@ -126,4 +127,5 @@ define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstr
 			return primes;
 		}
 	};
+
 });

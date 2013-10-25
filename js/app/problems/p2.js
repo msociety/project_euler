@@ -1,4 +1,5 @@
-define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstrap, euler) {
+define(['problems'], function(euler) {
+
 	euler.p2 = {
 
 		evenFibonacciNumbers: function evenFibonacciNumbers(lim) {
@@ -20,4 +21,5 @@ define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstr
 			return sol;
 		}
 	};
+
 });

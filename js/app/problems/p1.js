@@ -1,4 +1,5 @@
-define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstrap, euler) {
+define(['problems'], function(euler) {
+
 	euler.p1 = {
 
 		multiplesOf3And5: function multiplesOf3And5() {
@@ -12,4 +13,5 @@ define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstr
 		}
 
 	};
+
 });

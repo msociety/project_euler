@@ -1,4 +1,5 @@
-define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstrap, euler) {
+define(['problems'], function(euler) {
+
 	euler.p3 = {
 
 		getPrimes: function getPrimes(max) {
@@ -33,4 +34,5 @@ define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstr
 			return num;
 		}
 	};
+
 });

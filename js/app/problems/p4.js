@@ -1,4 +1,5 @@
-define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstrap, euler) {
+define(['problems'], function(euler) {
+
 	euler.p4 = {
 
 		isPalindrome: function isPalindrome(n) {
@@ -36,4 +37,5 @@ define(['jquery', 'underscore', 'bootstrap', 'problems'], function($, _, bootstr
 			return sol.i + " * " + sol.j + " = " + sol.mul;
 		}
 	};
+
 });
